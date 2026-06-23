@@ -4,6 +4,9 @@ import {
   Users,
   Award,
   ArrowRight,
+  MonitorPlay,
+  School,
+  Library,
 } from "lucide-react";
 
 export default function App() {
@@ -18,12 +21,20 @@ export default function App() {
           </p>
 
           <div className="hero-buttons">
-            <a href="#" className="btn-primary">
-              Conheça os Cursos
+            <a
+              href="https://genebraead.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              Entrar na Plataforma
             </a>
 
-            <a href="#" className="btn-secondary">
-              Saiba Mais
+            <a
+              href="#cursos"
+              className="btn-secondary"
+            >
+              Ver Cursos
             </a>
           </div>
         </div>
@@ -31,23 +42,22 @@ export default function App() {
 
       <section className="features">
         <div className="container">
-          <h2>Por que estudar conosco?</h2>
+          <h2>Por que estudar na Genebra EAD?</h2>
 
           <div className="grid">
             <div className="card">
               <GraduationCap size={40} />
               <h3>Formação Teológica</h3>
               <p>
-                Conteúdo sólido para quem deseja crescer no conhecimento
-                bíblico.
+                Conteúdo sólido, bíblico e aplicável ao ministério cristão.
               </p>
             </div>
 
             <div className="card">
-              <BookOpen size={40} />
-              <h3>Ensino Online</h3>
+              <MonitorPlay size={40} />
+              <h3>100% Online</h3>
               <p>
-                Estude de qualquer lugar e no seu próprio ritmo.
+                Estude onde estiver, no seu ritmo e horário.
               </p>
             </div>
 
@@ -55,7 +65,7 @@ export default function App() {
               <Users size={40} />
               <h3>Comunidade</h3>
               <p>
-                Aprenda junto com alunos comprometidos com o Reino de Deus.
+                Aprenda junto com líderes e discípulos de todo o Brasil.
               </p>
             </div>
 
@@ -63,7 +73,39 @@ export default function App() {
               <Award size={40} />
               <h3>Certificação</h3>
               <p>
-                Formação reconhecida e direcionada ao ministério cristão.
+                Formação estruturada para crescimento ministerial.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cursos" className="course">
+        <div className="container">
+          <h2>Cursos Disponíveis</h2>
+
+          <div className="grid">
+            <div className="card">
+              <BookOpen size={40} />
+              <h3>Teologia com Ênfase no Discipulado</h3>
+              <p>
+                Formação completa em teologia e discipulado transformador.
+              </p>
+            </div>
+
+            <div className="card">
+              <School size={40} />
+              <h3>Trilha Cultura do Discipulado</h3>
+              <p>
+                Capacitação para igrejas discipuladoras.
+              </p>
+            </div>
+
+            <div className="card">
+              <Library size={40} />
+              <h3>Biblioteca Digital</h3>
+              <p>
+                Acesso a materiais, apostilas e conteúdos exclusivos.
               </p>
             </div>
           </div>
@@ -78,28 +120,38 @@ export default function App() {
             <h3>Teologia com Ênfase no Discipulado</h3>
 
             <p>
-              Uma formação completa para quem deseja unir conhecimento
-              teológico, prática ministerial e discipulado transformador.
+              Uma formação que integra conhecimento bíblico,
+              vida cristã, liderança e discipulado.
             </p>
 
-            <button className="btn-primary">
+            <a
+              href="https://genebraead.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
               Quero Conhecer
               <ArrowRight size={18} />
-            </button>
+            </a>
           </div>
         </div>
       </section>
 
       <section className="cta">
         <div className="container">
-          <h2>Comece sua jornada hoje</h2>
+          <h2>Mais de 500 alunos impactados</h2>
 
           <p>
-            Prepare-se para servir com excelência e formar discípulos que fazem
-            discípulos.
+            Faça parte de uma comunidade comprometida com a formação
+            teológica e o discipulado transformador.
           </p>
 
-          <a href="#" className="btn-primary">
+          <a
+            href="https://genebraead.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary"
+          >
             Fazer Inscrição
           </a>
         </div>
@@ -107,6 +159,7 @@ export default function App() {
 
       <footer>
         <p>© 2026 Faculdade Genebra EAD</p>
+        <p>Teologia que forma. Discipulado que transforma.</p>
       </footer>
     </div>
   );
