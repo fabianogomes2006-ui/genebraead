@@ -5,41 +5,86 @@
 }
 
 body {
+  background: #f4f6f8;
   font-family: Arial, sans-serif;
-  background: #f5f5f5;
+  color: #1f2937;
+}
+
+.app {
+  min-height: 100vh;
 }
 
 .hero {
-  background: #10192f;
+  background: linear-gradient(135deg, #7a1b2b, #4e1020);
   color: white;
+  padding: 50px 20px;
   text-align: center;
-  padding: 60px 20px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
 }
 
 .hero h1 {
-  font-size: 48px;
-  margin-bottom: 12px;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .hero p {
-  font-size: 22px;
+  opacity: 0.95;
 }
 
-main {
+.container {
   padding: 20px;
   padding-bottom: 100px;
 }
 
 .card {
   background: white;
-  border-radius: 16px;
+  border-radius: 18px;
   padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 18px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
 }
 
-.card h2 {
+.card h2,
+.card h3 {
   margin-bottom: 10px;
+  color: #7a1b2b;
+}
+
+.card p {
+  line-height: 1.5;
+}
+
+.btn-primary {
+  margin-top: 15px;
+  background: #d4af37;
+  color: #111;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.progress {
+  width: 100%;
+  height: 12px;
+  background: #ececec;
+  border-radius: 30px;
+  margin-top: 12px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 35%;
+  height: 100%;
+  background: #d4af37;
 }
 
 .bottom-nav {
@@ -48,10 +93,12 @@ main {
   left: 0;
   right: 0;
   background: white;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #e5e7eb;
   display: flex;
   justify-content: space-around;
   padding: 10px 0;
+  z-index: 999;
+  box-shadow: 0 -3px 10px rgba(0,0,0,0.08);
 }
 
 .bottom-nav button {
@@ -61,9 +108,35 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 4px;
+  color: #7a1b2b;
+  cursor: pointer;
   font-size: 12px;
 }
 
+.bottom-nav button:hover {
+  color: #d4af37;
+}
+
 .bottom-nav svg {
-  color: #10192f;
+  width: 22px;
+  height: 22px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+small {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .container {
+    padding: 15px;
+    padding-bottom: 100px;
+  }
 }
